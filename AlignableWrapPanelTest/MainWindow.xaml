@@ -13,20 +13,40 @@
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
         <GroupBox Grid.Row="0" Header="Menü">
-            <c:AlignableWrapPanel VerticalAlignment="Stretch">
-                <Button Content="Button1" VerticalAlignment="Stretch" Margin="5"/>
-                <Button Content="Button2" VerticalAlignment="Stretch"/>
-                <Button Content="Button3" VerticalAlignment="Center"/>
-                <Button Content="Button4" VerticalAlignment="Center"/>
-                <Button Content="Button5" VerticalAlignment="Center"/>
-                <Button Content="Button6" VerticalAlignment="Center"/>
-                <Button Content="Button7" VerticalAlignment="Stretch"/>
-                <Button Content="Button8" VerticalAlignment="Center"/>
-                <Button Content="Button9" VerticalAlignment="Center"/>
-                <Button Content="Button10" VerticalAlignment="Stretch"/>
-                <Button Content="Button11" VerticalAlignment="Center"/>
-                <Button Content="Button12" VerticalAlignment="Center"/>
-            </c:AlignableWrapPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <c:StretchWrapPanel VerticalAlignment="Stretch" Grid.Column="0">
+                    <Button Content="Button1" VerticalAlignment="Stretch"/>
+                    <Button Content="Button2" VerticalAlignment="Stretch"/>
+                    <Button Content="Button3" VerticalAlignment="Center"/>
+                    <Button Content="Button4" VerticalAlignment="Center"/>
+                    <Button Content="Button5" VerticalAlignment="Center"/>
+                    <Button Content="Button6" VerticalAlignment="Center"/>
+                    <Button Content="Button7" VerticalAlignment="Stretch"/>
+                    <Button Content="Button8" VerticalAlignment="Center"/>
+                    <Button Content="Button9" VerticalAlignment="Center"/>
+                    <Button Content="Button10" VerticalAlignment="Stretch"/>
+                    <Button Content="Button11" VerticalAlignment="Center"/>
+                    <Button Content="Button12" VerticalAlignment="Center"/>
+                </c:StretchWrapPanel>
+                <c:StretchWrapPanel VerticalAlignment="Stretch" Grid.Column="1" HorizontalAlignment="Right">
+                    <Button Content="Button1" VerticalAlignment="Stretch" MinHeight="100"/>
+                    <Button Content="Button2" VerticalAlignment="Stretch"/>
+                    <Button Content="Button3" VerticalAlignment="Center"/>
+                    <Button Content="Button4" VerticalAlignment="Center"/>
+                    <Button Content="Button5" VerticalAlignment="Center"/>
+                    <Button Content="Button6" VerticalAlignment="Center"/>
+                    <Button Content="Button7" VerticalAlignment="Stretch"/>
+                    <Button Content="Button8" VerticalAlignment="Center"/>
+                    <Button Content="Button9" VerticalAlignment="Center"/>
+                    <Button Content="Button10" VerticalAlignment="Stretch"/>
+                    <Button Content="Button11" VerticalAlignment="Center"/>
+                    <Button Content="Button12" VerticalAlignment="Center"/>
+                </c:StretchWrapPanel>
+            </Grid>
         </GroupBox>
     </Grid>
 </Window>
